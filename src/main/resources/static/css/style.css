@@ -1,0 +1,165 @@
+@charset "ISO-8859-1";
+
+body {
+  background-color: #ffffff !important;
+}
+
+#table,
+#form {
+  font-family: arial;
+  font-size: 20px;
+  margin: 25px;
+  width: 1000px;
+  height: auto;
+  outline: solid 1px rgb(255, 255, 255);
+  border: 1px solid rgb(235, 112, 12);
+  border-radius: 25px;
+  text-align: center;
+  margin: 5px;
+
+  padding: 15px;
+
+  color: black;
+}
+h3,
+h4 {
+  /* outline: solid 1px black; */
+  /* border: 2px solid rgb(8, 161, 41); */
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  border-radius: 25px;
+}
+
+.nav2 {
+  border-radius: 25px;
+  background-color: #ad1457;
+}
+
+.multiTable {
+  display: inline-block;
+  min-width: 80%;
+}
+
+#parent {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  /* flex-flow: column wrap; */
+  justify-content: center;
+  align-items: center;
+}
+td {
+  padding: 10px;
+  border: 1px solid black;
+}
+table {
+  border-radius: 30px;
+}
+h3,
+h4,
+i {
+  color: white;
+}
+.material-icon {
+  display: table-cell !important;
+  vertical-align: middle;
+  line-height: 0 !important;
+  height: 100% !important;
+}
+
+/* label color */
+.input-field label {
+  color: rgb(245, 52, 52);
+}
+
+/* label focus color */
+.input-field input[type="text"]:focus + label {
+  color: rgb(212, 144, 18);
+}
+
+/* label underline focus color */
+.input-field input[type="text"]:focus {
+  border-bottom: 1px solid #000;
+  box-shadow: 0 1px 0 0 rgb(0, 0, 0);
+}
+.fa-sort {
+  color: red;
+}
+
+.fa-microphone-alt {
+  color: green;
+}
+#tag {
+  display: none;
+  position: relative;
+  border: 2px solid rgb(233, 68, 3);
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  border-radius: 25px;
+  width: fit-content;
+  padding: 3px;
+  margin: 1px;
+}
+
+#cancel {
+  color: red;
+}
+td {
+  font-size: 16px;
+}
+.fa-link,
+.times-circle {
+  color: red;
+  font-size: 23px;
+}
+.fa-pencil-alt {
+  color: white;
+}
+input[type="submit"] {
+  /* font-family: 'Font Awesome\ 5 Free'; */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  /* content: '\f0c7'; */
+  /* content: "\f0c7"; /* FontAwesome Unicode */
+  /* font-family: FontAwesome; */
+  width: 90px;
+  height: 90px;
+
+  text-align: center;
+  text-justify: center;
+  font-size: 40px;
+  border-radius: 15px;
+}
+
+#deletebtn,
+#editbtn {
+  border-radius: 6px;
+}
+th {
+  color: rgb(67, 145, 223);
+}
+
+h4 {
+  background-color: #7d136a;
+  padding: 2px;
+}
+#podcast {
+  color: white;
+  font-size: 34px;
+}
+a:hover {
+  text-shadow: 0 0 2px #ff0000;
+}
+#podcast:hover {
+  text-shadow: 0 0 5px #ff0000;
+}
+.brand-logo:hover {
+  text-shadow: 0 0 8px #fa5151;
+}
+
+.fa-undo {
+  color: rgb(252, 248, 49);
+  font-size: 29px;
+}
+.fa-undo:hover {
+  text-shadow: 0 0 10px #ff0000;
+}

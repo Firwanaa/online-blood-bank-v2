@@ -1,0 +1,36 @@
+<div id="table" th:fragment="Table">
+  <h4 id="donerTable" class="">Doners List</h4>
+  <table class="table" th:if="${donerList != null and !donerList.empty}">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Blood Type</th>
+        <th scope="col">Country</th>
+        <th scope="col">City</th>
+        <th scope="col">Postal Code</th>
+      </tr>
+    </thead>
+    <tbody th:each="doner : ${donerList}">
+      <tr>
+        <th scope="row">1</th>
+        <td th:text="${doner.name}" th:name="*{doner.name}"></td>
+        <td th:text="${doner.email}" th:name="*{doner.email}"></td>
+        <td th:text="${doner.bloodType}" th:name="*{doner.bloodType}"></td>
+        <td
+          th:text="${doner.address.country}"
+          th:name="*{doner.address.country}"
+        ></td>
+        <td
+          th:text="${doner.address.city}"
+          th:name="*{doner.address.city}"
+        ></td>
+        <td
+          th:text="${doner.address.postCode}"
+          th:name="*{doner.address.postCode}"
+        ></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,77 @@
+<div id="form" th:fragment="form">
+  <h4>New Doner</h4>
+  <form method="post" th:action="@{/addDoner}" th:object="${doner}">
+    <input type="hidden" th:field="${doner.id}" />
+    <div class="form-group">
+      <label for="exampleFormControlInput1">Name</label>
+      <input
+        th:field="*{name}"
+        type="text"
+        class="form-control"
+        id="exampleFormControlInput1"
+        placeholder="Joe Doe"
+      />
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlInput1">password</label>
+      <input
+        th:field="*{password}"
+        type="password"
+        class="form-control"
+        id="exampleFormControlInput1"
+        placeholder="password"
+      />
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlInput1">Email address</label>
+      <input
+        th:field="*{email}"
+        type="email"
+        class="form-control"
+        id="exampleFormControlInput1"
+        placeholder="name@example.com"
+      />
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlSelect1">Select Blood Type</label>
+      <select class="form-control" th:field="*{bloodType}">
+        <option th:each="b : ${bloodType}" th:value="${b}" th:text="${b}">
+          1
+        </option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlInput1">Country</label>
+      <input
+        th:field="*{address.country}"
+        type="text"
+        class="form-control"
+        id="exampleFormControlInput1"
+        placeholder="Canada"
+      />
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlInput1">City</label>
+      <input
+        th:field="*{address.city}"
+        type="text"
+        class="form-control"
+        id="exampleFormControlInput1"
+        placeholder="Toronto"
+      />
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlInput1">Postal Code</label>
+      <input
+        th:field="*{address.postCode}"
+        type="text"
+        class="form-control"
+        id="exampleFormControlInput1"
+        placeholder="L21 4X2"
+      />
+    </div>
+
+    <br />
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
